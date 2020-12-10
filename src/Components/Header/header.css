@@ -1,0 +1,39 @@
+.nav-disp {
+  width: 100%;
+  background-image: url("https://easybiztech.co.za/wp-content/uploads/2018/10/dark-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.content {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  margin-right: 0;
+  padding-top: 1.7rem;
+}
+
+.title {
+  margin-left: 4rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 0;
+}
+
+.rule {
+  border: 0.5rem solid tomato;
+  border-radius: 30px;
+}

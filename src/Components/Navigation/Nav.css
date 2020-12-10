@@ -1,0 +1,22 @@
+.stylish {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.Nav-links {
+  list-style: none;
+  width: 40%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
