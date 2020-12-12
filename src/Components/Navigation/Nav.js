@@ -35,22 +35,30 @@ export default function Nav() {
             color="inherit"
             aria-label="menu"
           >
-            <MenuIcon />
+            <i className=" fa fa-bars" style={{ fontSize: "1.5rem" }}></i>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             <ul className="Nav-links">
               <Link to="/" className="stylish">
-                <li>Home</li>
+                <li>
+                  <i className="fa fa-home">&nbsp;Home</i>
+                </li>
               </Link>
               <Link to="/about" className="stylish">
-                <li>About</li>
+                <li>
+                  <i className="fa fa-info-circle">&nbsp;About</i>
+                </li>
               </Link>
               <Link to="/contact" className="stylish">
-                <li>Contact</li>
+                <li>
+                  <i className="fa fa-phone">&nbsp;Contact</i>
+                </li>
               </Link>
             </ul>
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" style={{ fontSize: "1.5rem" }}>
+            <i className="fa fa-sign-in">&nbsp;Login</i>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

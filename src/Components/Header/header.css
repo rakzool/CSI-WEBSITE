@@ -36,4 +36,5 @@
 .rule {
   border: 0.5rem solid tomato;
   border-radius: 30px;
+  background-color: tomato;
 }

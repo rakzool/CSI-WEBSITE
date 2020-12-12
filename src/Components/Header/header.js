@@ -6,7 +6,11 @@ export default function Header() {
     <div className="nav-disp">
       <div className="content">
         <div className="logo">
-          <img src="/assets/csi-cropped.png" width="160px" height="160px"></img>
+          <img
+            src="/assets/csi-cropped.png"
+            width="150rem"
+            height="150rem"
+          ></img>
         </div>
         <div className="title">
           <h1>CSI Student Chapter IPEC</h1>
