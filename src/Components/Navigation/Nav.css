@@ -1,7 +1,7 @@
 .stylish {
   color: white;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .Navigation {
@@ -16,8 +16,25 @@
 .Nav-links {
   font-size: 1.5rem;
   list-style: none;
-  width: 40%;
   justify-content: space-around;
+  width: 35%;
   display: flex;
   align-items: center;
+}
+
+.Nav-links li {
+  margin-left: 5 rem;
+}
+
+.Nav-links li :hover {
+  transform: scale(1.2);
+  transition: ease-in-out;
+}
+
+.Login {
+  font-size: 1.56rem;
+}
+.Login :hover {
+  transform: scale(1.2);
+  transition: ease-in-out;
 }

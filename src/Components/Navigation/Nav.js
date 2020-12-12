@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(4),
   },
   title: {
     flexGrow: 1,
@@ -35,7 +35,7 @@ export default function Nav() {
             color="inherit"
             aria-label="menu"
           >
-            <i className=" fa fa-bars" style={{ fontSize: "1.5rem" }}></i>
+            <i className=" fa fa-bars" style={{ fontSize: "2rem" }}></i>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             <ul className="Nav-links">
@@ -56,8 +56,10 @@ export default function Nav() {
               </Link>
             </ul>
           </Typography>
-          <Button color="inherit" style={{ fontSize: "1.5rem" }}>
-            <i className="fa fa-sign-in">&nbsp;Login</i>
+          <Button color="inherit">
+            <span className="Login">
+              <i className="fa fa-sign-in">&nbsp;Login</i>
+            </span>
           </Button>
         </Toolbar>
       </AppBar>
