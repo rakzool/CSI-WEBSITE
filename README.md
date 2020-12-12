@@ -7,5 +7,4 @@
 
 #### To start project use
 `npm start` or `yarn start`
-
-       provided Nodejs and yarn are installed
+#### provided Nodejs and yarn are installed
