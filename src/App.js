@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -6,7 +6,6 @@ import Nav from "./Components/Navigation/Nav";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
-import Drawer from "./Components/Drawer/Drawer";
 
 class App extends React.Component {
   state = {};
@@ -23,7 +22,7 @@ class App extends React.Component {
               <Route path="/contact" component={Contact} />
             </Switch>
           </Router>
-          <Drawer />
+
           <div className="App"></div>
         </div>
       </div>

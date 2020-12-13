@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./header.css";
 
 export default function Header() {
@@ -10,6 +10,7 @@ export default function Header() {
             src="/assets/csi-cropped.png"
             width="150rem"
             height="150rem"
+            alt="CSi Logo"
           ></img>
         </div>
         <div className="title">
