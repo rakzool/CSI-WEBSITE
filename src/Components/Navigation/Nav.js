@@ -6,9 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import { DrawerData } from "../Drawer/Drawer";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+
 import "./Nav.css";
 
 import Drawer from "../Drawer/Drawer";

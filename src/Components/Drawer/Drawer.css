@@ -6,3 +6,69 @@
   color: white;
   font-size: 1.8rem;
 }
+
+.link-container {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.stylrem {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.main-menu {
+  display: flex;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.spacer {
+  margin-bottom: 1rem;
+}
+
+.main-menu button {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: tomato;
+  font-size: 2.2rem;
+}
+
+.main-menu button :hover {
+  transition: 300ms ease-in-out;
+  transform: scale(1.2);
+}
+
+.main-menu button:active {
+  color: blue;
+}
+
+.drawer-nav-container {
+  margin-top: 10px;
+}
+
+.link-container {
+  margin: 0;
+  padding: 0;
+}
+
+.route-link {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.route-link :hover {
+  color: #e7573e;
+}
+
+.route-link:hover {
+  background-color: #53525244;
+  transition: 600ms ease-in-out;
+  transform: rotateY(360deg) scale(1.2);
+}
