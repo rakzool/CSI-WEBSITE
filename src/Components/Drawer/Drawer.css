@@ -63,11 +63,8 @@
   text-align: center;
 }
 
-.route-link :hover {
-  color: #e7573e;
-}
-
 .route-link:hover {
+  color: #e7573e;
   background-color: #53525244;
   transition: 600ms ease-in-out;
   transform: rotateY(360deg) scale(1.2);
