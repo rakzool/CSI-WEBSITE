@@ -6,6 +6,7 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import "./Drawer.css";
+import { IconButton } from "@material-ui/core";
 
 const useStyles = makeStyles({
   list: {
@@ -77,11 +78,16 @@ export default function Drawer() {
         <div className="drawer-nav-container">
           <ul className="link-container">
             {links.map((items, index) => (
-              <Link to={items.Path} className="stylrem">
-                <li key={index} className={items.cName}>
-                  <span className="link-style">
-                    <i className={items.icon}>&nbsp;{items.title}</i>
-                  </span>
+              <Link to={items.Path} className="stylrem" key={index}>
+                <li className={items.cName}>
+                  <div className="link-style">
+                    <div className="icons">
+                      <i className={items.icon}>&nbsp;</i>
+                    </div>
+                    <div className="texts">
+                      <span>{items.title}</span>
+                    </div>
+                  </div>
                 </li>
                 <Divider style={{ marginTop: "5px", marginBottom: "5px" }} />
               </Link>
@@ -96,9 +102,17 @@ export default function Drawer() {
     <div>
       {
         <React.Fragment>
-          <span className="bars" onClick={toggleDrawer("left", true)}>
-            <i className="fa fa-bars"></i>
-          </span>
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+            onClick={toggleDrawer("left", true)}
+          >
+            <span className="bars">
+              <i className="fa fa-bars"></i>
+            </span>
+          </IconButton>
 
           <SwipeableDrawer
             anchor="left"

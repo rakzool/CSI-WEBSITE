@@ -5,7 +5,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 
 import "./Nav.css";
 
@@ -36,39 +35,25 @@ export default function Nav() {
         style={{ background: "#393e46", width: "100vw" }}
       >
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-            onClick={showSidebar}
-          >
-            <Drawer />
-          </IconButton>
+          <Drawer onClick={showSidebar} />
 
           <Typography variant="h6" className={classes.title}>
-            <ul className="Nav-links">
-              <span style={{ marginLeft: "3px" }}></span>
-              <Link to="/" className="stylish">
-                <li>
-                  <i className="fa fa-home">&nbsp;Home</i>
-                </li>
-              </Link>
-              <Link to="/about" className="stylish">
-                <li>
-                  <i className="fa fa-info-circle">&nbsp;About</i>
-                </li>
-              </Link>
-              <Link to="/contact" className="stylish">
-                <li>
-                  <i className="fa fa-phone">&nbsp;Contact</i>
-                </li>
-              </Link>
-            </ul>
+            <Link to="/" className="stylish">
+              <div className="Nav-csi">
+                <img
+                  src="/assets/csi-cropped.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="CSi Logo"
+                ></img>
+
+                <h5 className="Nav-csi-text">CSI IPEC</h5>
+              </div>
+            </Link>
           </Typography>
           <Button color="inherit">
             <span className="Login">
-              <i className="fa fa-sign-in">&nbsp;Login</i>
+              <i className="fa fa-sign-in">&nbsp;</i>Login
             </span>
           </Button>
         </Toolbar>
