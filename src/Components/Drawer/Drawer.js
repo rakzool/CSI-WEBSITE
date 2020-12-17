@@ -68,7 +68,7 @@ export default function Drawer() {
     >
       <List>
         <div className="main-menu">
-          <i className="fa fa-bars">&nbsp;&nbsp;MENU</i>
+          <i className="fa fa-bars"></i><span className="menu-text">&nbsp;&nbsp;MENU</span>
           <button onClick={toggleDrawer("left", true)} className="close-btn">
             <i className="fa fa-times"></i>
           </button>
