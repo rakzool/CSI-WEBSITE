@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
+
+.csi-ka-logo {
+  margin-bottom: 5rem;
+}
+.home-title-title {
+  font-family: "Russo One";
+  font-size: 4rem;
+  border-bottom: 0.8rem solid tomato;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-title-text {
+  font-size: 2rem;
+  word-spacing: 2px;
+  padding: 1rem;
+  font-family: "cairo";
+  text-justify: distribute-all-lines;
+  text-align: justify;
+  width: 70%;
+}
+
+.home-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sigs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  width: 100vw;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  margin-top: 3rem;
+}
+
+.temp {
+  font-size: 5rem;
+}
