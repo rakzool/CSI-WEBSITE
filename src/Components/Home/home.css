@@ -31,8 +31,8 @@
 
 .sigs {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 40vh;
   width: 100vw;
   background-color: #b8c6db;
@@ -41,5 +41,12 @@
 }
 
 .temp {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 70%;
   font-size: 5rem;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
 }
