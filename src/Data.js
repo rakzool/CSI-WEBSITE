@@ -37,7 +37,7 @@ const Data = [
   {
     name: "SIG Python",
     description:
-      "In SIG C & DS we teach you the basics of C programming language and also the Basics of data structure that is elementary to learn anythin in programing.",
+      "In SIG python we teach you about Python a versitalie and really popular scripting based programing Language ",
     image:
       "https://qph.fs.quoracdn.net/main-qimg-28cadbd02699c25a88e5c78d73c7babc",
     alt: "Python",
@@ -46,7 +46,7 @@ const Data = [
   {
     name: "SIG Java",
     description:
-      "In SIG C & DS we teach you the basics of C programming language and also the Basics of data structure that is elementary to learn anythin in programing.",
+      "In SIG Java we teach you the essence of  java Language and help you grow as a Java developer from Basics to Advance ",
     image: "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png",
     alt: "Java",
     id: "6",
