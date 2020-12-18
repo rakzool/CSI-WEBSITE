@@ -12,7 +12,7 @@ function Home() {
         <Header />
       </div>
       <div className="home-tile">
-        <div className="home-title-title">Hola Amigoes</div>
+        <div className="home-title-title">Hola Amigos</div>
         <div className="home-title-text">
           CSI student chapter IPEC is a Society that works towards Nurturing and
           supporting Talented Coders by providing them Community Support, We
