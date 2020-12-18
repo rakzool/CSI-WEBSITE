@@ -20,24 +20,31 @@ function Home() {
           a learning Environment.
         </div>
       </div>
-      <div className="sigs">
-        <div className="temp">
-          {Data.map((itms, index) => {
-            return (
-              <React.StrictMode key={index}>
-                <Tilt className="Tilt">
-                  <div className="temp-itm">
-                    <CardComponent
-                      name={itms.name}
-                      desp={itms.description}
-                      alt={itms.alt}
-                      image={itms.image}
-                    />
-                  </div>
-                </Tilt>
-              </React.StrictMode>
-            );
-          })}
+      <div className="Sig-main">
+        <div className="golden">
+          <Tilt className="Tilt">
+            <div className="our-sig">OUR SIGs</div>
+          </Tilt>
+        </div>
+        <div className="sigs">
+          <div className="temp">
+            {Data.map((itms, index) => {
+              return (
+                <React.StrictMode key={index}>
+                  <Tilt className="Tilt">
+                    <div className="temp-itm">
+                      <CardComponent
+                        name={itms.name}
+                        desp={itms.description}
+                        alt={itms.alt}
+                        image={itms.image}
+                      />
+                    </div>
+                  </Tilt>
+                </React.StrictMode>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
