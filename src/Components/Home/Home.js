@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/header";
 import Tilt from "react-tilt";
 import "./home.css";
-import Data from "../../Data";
+import Data from "../../Data.json";
 import CardComponent from "../card/cardComponent";
 
 function Home() {
@@ -29,15 +29,16 @@ function Home() {
         <div className="sigs">
           <div className="temp">
             {Data.map((itms, index) => {
+              const { name, description, alt, image } = itms;
               return (
                 <React.StrictMode key={index}>
                   <Tilt className="Tilt">
                     <div className="temp-itm">
                       <CardComponent
-                        name={itms.name}
-                        desp={itms.description}
-                        alt={itms.alt}
-                        image={itms.image}
+                        name={name}
+                        desp={description}
+                        alt={alt}
+                        image={image}
                       />
                     </div>
                   </Tilt>
