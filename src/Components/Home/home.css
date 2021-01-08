@@ -92,14 +92,9 @@
 .fill {
   z-index: 1;
   right: 0;
-  width: 70vw;
-  display: none;
+  width: 60vw;
   background: #000000;
   opacity: 0.85;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
 }
 
 .back-image,
@@ -110,15 +105,6 @@
 
 .back-image {
   width: 100vw;
-}
-
-.fill:hover {
-  display: block;
-}
-
-.back-image:hover + .fill {
-  display: block;
-  transition: 100ms ease-in;
 }
 
 .fill-text {

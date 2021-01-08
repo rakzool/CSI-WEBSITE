@@ -5,3 +5,9 @@
 .App {
   text-align: center;
 }
+
+.nav {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+}
