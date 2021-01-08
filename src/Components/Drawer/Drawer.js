@@ -37,6 +37,12 @@ export default function Drawer() {
       cName: "route-link",
       icon: "fa fa-info-circle",
     },
+    {
+      title: "Our Team",
+      Path: "/team",
+      cName: "route-link",
+      icon: "fa fa-users",
+    },
   ];
 
   const classes = useStyles();
@@ -68,7 +74,8 @@ export default function Drawer() {
     >
       <List>
         <div className="main-menu">
-          <i className="fa fa-bars"></i><span className="menu-text">&nbsp;&nbsp;MENU</span>
+          <i className="fa fa-bars"></i>
+          <span className="menu-text">&nbsp;&nbsp;MENU</span>
           <button onClick={toggleDrawer("left", true)} className="close-btn">
             <i className="fa fa-times"></i>
           </button>

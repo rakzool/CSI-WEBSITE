@@ -31,7 +31,6 @@ export default function CardComponent({ name, desp, alt, image }) {
           component="img"
           alt={alt}
           image={image}
-          title="SIGS"
           style={{
             height: "20rem",
             width: "30rem",

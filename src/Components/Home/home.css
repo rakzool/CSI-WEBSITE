@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
 
 .csi-ka-logo {
   margin-bottom: 5rem;
@@ -58,9 +60,11 @@
 }
 
 .Sig-main {
+  width: 100vw;
   text-align: center;
   background-color: #b8c6db;
   background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  padding-bottom: 4vh;
 }
 
 .our-sig {
@@ -83,4 +87,96 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.fill {
+  z-index: 1;
+  right: 0;
+  width: 70vw;
+  display: none;
+  background: #000000;
+  opacity: 0.85;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+.back-image,
+.fill {
+  position: absolute;
+  height: 65vw;
+}
+
+.back-image {
+  width: 100vw;
+}
+
+.fill:hover {
+  display: block;
+}
+
+.back-image:hover + .fill {
+  display: block;
+  transition: 100ms ease-in;
+}
+
+.fill-text {
+  font-size: 5.5vw;
+  margin: 1rem 2rem;
+  color: tomato;
+  text-align: left;
+  font-family: "Rajdhani";
+  text-shadow: 0.2vw 0.1vw #b8c6dbda, 0 0 0.4vw whitesmoke;
+  z-index: 3;
+}
+
+.fill-address {
+  font-size: 2.8vw;
+  color: #c55541;
+  margin-top: 10%;
+}
+
+.fill-handle {
+  margin-top: 15%;
+  font-size: 3vw;
+  text-align: left;
+  text-shadow: none;
+}
+
+.fill-handle ul li {
+  display: inline;
+  text-decoration: none;
+}
+.fill-handle ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.fill-handle ul a {
+  color: tomato;
+}
+
+.fb {
+  margin: 0 10vw;
+}
+
+.fb a:hover {
+  color: #4267b2;
+}
+.ig a:hover {
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mail a:hover {
+  color: crimson;
 }
