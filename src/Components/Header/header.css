@@ -1,18 +1,20 @@
 .nav-disp {
   width: 100vw;
-  background-image: url("https://easybiztech.co.za/wp-content/uploads/2018/10/dark-header.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 50vh;
+  background-position: center;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 38px;
 }
 
 .content {
   display: flex;
   color: white;
+  text-align: left;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;

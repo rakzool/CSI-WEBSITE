@@ -31,3 +31,9 @@
   color: white;
   cursor: pointer;
 }
+
+.navbar-filler {
+  height: 64px;
+  z-index: 0;
+  width: 100vw;
+}

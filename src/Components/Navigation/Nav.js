@@ -29,35 +29,38 @@ export default function Nav() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className={classes.root}>
-      <AppBar
-        position="static"
-        style={{ background: "#393e46", width: "100vw" }}
-      >
-        <Toolbar>
-          <Drawer onClick={showSidebar} />
+    <div>
+      <div className={classes.root}>
+        <AppBar
+          position="static"
+          style={{ background: "#393e46", width: "100vw" }}
+        >
+          <Toolbar>
+            <Drawer onClick={showSidebar} />
 
-          <Typography variant="h6" className={classes.title}>
-            <Link to="/" className="stylish">
-              <div className="Nav-csi">
-                <img
-                  src="/assets/csi-cropped.png"
-                  width="30rem"
-                  height="30rem"
-                  alt="CSi Logo"
-                ></img>
+            <Typography variant="h6" className={classes.title}>
+              <Link to="/" className="stylish">
+                <div className="Nav-csi">
+                  <img
+                    src="/assets/csi-cropped.png"
+                    width="30rem"
+                    height="30rem"
+                    alt="CSi Logo"
+                  ></img>
 
-                <h5 className="Nav-csi-text">CSI IPEC</h5>
-              </div>
-            </Link>
-          </Typography>
-          <Button color="inherit">
-            <span className="Login">
-              <i className="fa fa-sign-in">&nbsp;</i>Login
-            </span>
-          </Button>
-        </Toolbar>
-      </AppBar>
+                  <h5 className="Nav-csi-text">CSI IPEC</h5>
+                </div>
+              </Link>
+            </Typography>
+            <Button color="inherit">
+              <span className="Login">
+                <i className="fa fa-sign-in">&nbsp;</i>Login
+              </span>
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </div>
+      <div className="navbar-filler"></div>
     </div>
   );
 }

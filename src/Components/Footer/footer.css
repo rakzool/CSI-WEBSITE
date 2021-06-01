@@ -1,0 +1,35 @@
+.footer-container-main {
+  width: 100vw;
+  background-color: #393e46;
+  font-family: "Fira Code";
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  color: whitesmoke;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: #393e46;
+  height: 40%;
+}
+
+.footer-text-main {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.heart {
+  color: #c51104;
+}

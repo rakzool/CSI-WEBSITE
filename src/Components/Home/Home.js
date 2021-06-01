@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/header";
 import Tilt from "react-tilt";
 import "./home.css";
+
 import Data from "../../Data.json";
+
+import Dialogs from "../Dialog/Dialogs";
 import CardComponent from "../card/cardComponent";
 
 function Home() {
+  const [open, setOpen] = useState(false);
+  const [list, setlist] = useState({});
+  const [syl, setSyl] = useState([]);
+  const [head, setHead] = useState([]);
+  const handleClickOpen = () => {
+    setOpen(!open);
+  };
+
+  const dialogOpen = (name, description, alt, image, syllabus, sigHead) => {
+    handleClickOpen();
+
+    setlist({
+      name: name,
+      description: description,
+      alt: alt,
+      image: image,
+    });
+    setSyl(syllabus);
+    setHead(sigHead);
+
+    console.log(syl);
+  };
+
   return (
     <div>
       <div className="csi-ka-logo">
@@ -14,10 +40,12 @@ function Home() {
       <div className="home-tile">
         <div className="home-title-title">Hola Amigos</div>
         <div className="home-title-text">
-          CSI student chapter IPEC is a Society that works towards Nurturing and
-          supporting Talented Coders by providing them Community Support, We
-          also organise Webinars, events, Coding Compititions so as to encourage
-          a learning Environment.
+          <p>
+            CSI student chapter IPEC is a Society, that works towards Nurturing
+            and supporting Coders by providing Community Support and learning
+            resources. We also organise multiple Webinars, events, Coding
+            Compititions inorder to encourage a learning Environment.
+          </p>
         </div>
       </div>
       <div className="Sig-main">
@@ -29,23 +57,49 @@ function Home() {
         <div className="sigs">
           <div className="temp">
             {Data.map((itms, index) => {
-              const { name, description, alt, image } = itms;
+              const { name, description, alt, image, syllabus, sigHead } = itms;
+
               return (
-                <React.StrictMode key={index}>
-                  <Tilt className="Tilt">
-                    <div className="temp-itm">
-                      <CardComponent
-                        name={name}
-                        desp={description}
-                        alt={alt}
-                        image={image}
-                      />
-                    </div>
-                  </Tilt>
-                </React.StrictMode>
+                <div key={index}>
+                  <div
+                    key={index}
+                    onClick={() =>
+                      dialogOpen(
+                        name,
+                        description,
+                        alt,
+                        image,
+                        syllabus,
+                        sigHead
+                      )
+                    }
+                  >
+                    <Tilt className="Tilt">
+                      <div className="temp-itm">
+                        <CardComponent
+                          name={name}
+                          desp={description}
+                          alt={alt}
+                          image={image}
+                          syllabus={syllabus}
+                        ></CardComponent>
+                      </div>
+                    </Tilt>
+                  </div>
+                </div>
               );
             })}
           </div>
+          <Dialogs
+            open={open}
+            name={list.name}
+            handleClickOpen={handleClickOpen}
+            image={list.image}
+            alt={list.alt}
+            desp={list.description}
+            syllabus={syl}
+            Heads={head}
+          />
         </div>
       </div>
       <div className="hello">
@@ -68,7 +122,9 @@ function Home() {
               <br />
               63 Site IV,
               <br />
-              Sahibabad Industrial Area, Surya Nagar Flyover Road Sahibabad,
+              Sahibabad Industrial Area,
+              <br /> Surya Nagar Flyover Road Sahibabad,
+              <br />
               Ghaziabad-U.P
               <br />
               PIN Code-201010
@@ -96,6 +152,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="unknownblock"></div>
     </div>
   );
 }

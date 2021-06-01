@@ -17,12 +17,13 @@
 
 .home-title-text {
   font-size: 2rem;
-  word-spacing: 2px;
   padding: 1rem;
+  word-spacing: 0px;
+  text-align-last: left;
   font-family: "cairo";
-  text-justify: distribute-all-lines;
-  text-align: justify;
-  width: 70%;
+  text-align: start;
+
+  width: 60%;
 }
 
 .home-tile {
@@ -30,6 +31,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10vh;
 }
 
 .sigs {
@@ -62,20 +64,25 @@
 .Sig-main {
   width: 100vw;
   text-align: center;
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  /* background-color: #b8c6db; */
+  /* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+  background-image: url("https://i.pinimg.com/originals/3c/87/43/3c87434aa8030322cd9f79b365993b12.gif");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
   padding-bottom: 4vh;
 }
 
 .our-sig {
-  font-size: 3rem;
-  font-family: "Press Start 2P";
+  font-size: 4rem;
+  font-family: "Orbitron";
+  text-indent: 1rem;
+  -webkit-text-stroke: 1.5px grey;
   padding: 1rem;
-  color: dimgrey;
-  text-shadow: 2px 2px #ff0000, 0px 0px 10px magenta;
+  color: white;
 
   margin-left: 45px;
-  border-bottom: 1px solid #f75307e0;
+  border-bottom: 1px solid white;
   border-width: 0.7rem;
 }
 
@@ -88,10 +95,13 @@
   justify-content: center;
   text-align: center;
 }
+.hello {
+  width: 100vw;
+}
 
 .fill {
   z-index: 1;
-  right: 0;
+
   width: 60vw;
   background: #000000;
   opacity: 0.85;
@@ -100,7 +110,7 @@
 .back-image,
 .fill {
   position: absolute;
-  height: 65vw;
+  height: 53.5vw;
 }
 
 .back-image {
@@ -108,7 +118,7 @@
 }
 
 .fill-text {
-  font-size: 5.5vw;
+  font-size: 4.5vw;
   margin: 1rem 2rem;
   color: tomato;
   text-align: left;
@@ -118,13 +128,14 @@
 }
 
 .fill-address {
-  font-size: 2.8vw;
+  font-size: 2.5vw;
   color: #c55541;
   margin-top: 10%;
+  text-shadow: none;
 }
 
 .fill-handle {
-  margin-top: 15%;
+  margin-top: 13%;
   font-size: 3vw;
   text-align: left;
   text-shadow: none;
@@ -165,4 +176,10 @@
 
 .mail a:hover {
   color: crimson;
+}
+
+.unknownblock {
+  height: 53.5vw;
+  width: 100vw;
+  display: hidden;
 }

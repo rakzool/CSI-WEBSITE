@@ -6,6 +6,7 @@ import Nav from "./Components/Navigation/Nav";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
+import Footer from "./Components/Footer/Footer";
 
 class App extends React.Component {
   state = {};
@@ -18,13 +19,18 @@ class App extends React.Component {
             <div className="nav">
               <Nav />
             </div>
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
+            <div className="pusher"></div>
+            <div className="cont">
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <div className="pageHandle">
+                  <Route path="/about" component={About} />
+                  <Route path="/contact" component={Contact} />
+                </div>
+              </Switch>
+            </div>
           </Router>
-
+          <Footer />
           <div className="App"></div>
         </div>
       </div>

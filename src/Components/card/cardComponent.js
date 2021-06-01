@@ -14,14 +14,14 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CardComponent({ name, desp, alt, image }) {
+export default function CardComponent({ name, desp, alt, image, syllabus }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardActionArea
         style={{
-          height: "50rem",
+          height: "55rem",
           padding: "2rem",
           display: "flex",
           flexDirection: "column",
@@ -39,7 +39,7 @@ export default function CardComponent({ name, desp, alt, image }) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <div className="Card-title">{name}</div>
+            <span className="Card-title">{name}</span>
           </Typography>
           <Typography
             variant="body2"
@@ -47,7 +47,11 @@ export default function CardComponent({ name, desp, alt, image }) {
             component="p"
             style={{
               fontSize: "1.5rem",
-              fontFamily: "Russo One",
+              textAlign: "left",
+              wordBreak: "break-word",
+              fontFamily: "Red Hat Text",
+              color: "black",
+              padding: "1rem",
             }}
           >
             {desp}
