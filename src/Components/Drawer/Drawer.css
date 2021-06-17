@@ -39,9 +39,9 @@
   font-size: 2.2rem;
 }
 
-.main-menu button.close-btn{
+.main-menu button.close-btn {
   position: relative;
-  right:75%;
+  right: 75%;
   z-index: 10;
 }
 
@@ -53,8 +53,7 @@
 .main-menu button:active {
   color: blue;
 }
-i
-.drawer-nav-container {
+i .drawer-nav-container {
   margin-top: 10px;
 }
 
@@ -73,7 +72,7 @@ i
   color: #e7573e;
   background-color: #53525244;
   transition: 600ms ease-in-out;
-  transform: rotateY(360deg) scale(1.2);
+  transform: scale(1.2);
 }
 
 .link-style {
@@ -83,4 +82,8 @@ i
 
 .texts {
   margin-left: 1.2rem;
+}
+
+.menu-text {
+  font-family: "Fira code";
 }

@@ -114,9 +114,9 @@ export default function Dialogs({
             <span>
               {syllabus.map((item, index) => {
                 return (
-                  <li key={index}>
-                    {index + 1 + ".  "}
-                    {item}
+                  <li key={index} className={Classes.syllabusList}>
+                    <span>{index + 1 + ".  "}</span>
+                    <span className={Classes.major}>{item}</span>
                   </li>
                 );
               })}

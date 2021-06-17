@@ -17,7 +17,7 @@
     "image":
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aaa4e2a5-78d4-4924-8c60-6e53429eaf65/dc5ov3v-1149e9fe-fce7-4385-b9a8-21d14d3401bd.png/v1/fill/w_1600,h_1600,strp/competitive_coding_logo_by_dollarakshay_dc5ov3v-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNjAwIiwicGF0aCI6IlwvZlwvYWFhNGUyYTUtNzhkNC00OTI0LThjNjAtNmU1MzQyOWVhZjY1XC9kYzVvdjN2LTExNDllOWZlLWZjZTctNDM4NS1iOWE4LTIxZDE0ZDM0MDFiZC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19._RYkoybuUis8GFNeN2wqmFYYKXjhVaKhHfKlY3OH70E",
     "alt": "Competitive",
-    "syllabus":["HTML 5","CSS 3","JavaScript","GitBash","GitHub"],
+    "syllabus":["Linear Data Structures - Arrays, Stack , Queues, Linked List","Standard Template Library","Algorithms (Sliding window, Kadene's, Moore's Voting alog)","Number Theory","Recursion","Trees","Graphs","Dynamic Programming","Backtracking"],
     "sigHead" : ["Sparsh Malhotra" , "Raghav Maheshwari"],
     "id": "2"
   },
@@ -49,7 +49,7 @@
     "image":
       "https://qph.fs.quoracdn.net/main-qimg-28cadbd02699c25a88e5c78d73c7babc",
     "alt": "Python",
-    "syllabus":["HTML 5","CSS 3","JavaScript","GitBash","GitHub"],
+    "syllabus":["Installation and Environment Setup","Intro to python Syntax","variables, loops, Operators","Conditional statement","Loops and advanced loops","Input method in python","Output formating","Continue, Pass and Break statements","Strings in Python","Introduction To lists","Tuples","User defined Function","Modules in python","Concept of Membership","sets","Dictionaries","Linear idenity Operator","List, sets, Dictionaries Comprehention","File Handling"],
     "sigHead" : ["Kush Gupta" , "Ritik Gupta"],
     "id": "5"
   },
@@ -59,7 +59,7 @@
       "In SIG Java we teach you the essence of  java Language and help you grow as a Java developer from Basics to Advance ",
     "image": "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png",
     "alt": "Java",
-    "syllabus":["HTML 5","CSS 3","JavaScript","GitBash","GitHub"],
+    "syllabus":["Intsalling Java and setting up JVM","Intoduction to Java syntax","variables in Java","Operators and Conditional statement in Java","Loops in Java","Some advanced techniques in Loops","Input Method in Java","Output Formatting","Functions in Java","Recursive function , function overloading and overriding","Formal and actual Parameters, swapping elements and values","Oops in Java","Classes and Object","Constructers, Destructors and its types","Servlets, Jsp and Data Connectivity"],
     "sigHead" : ["Bhavya Sharma" , " Karan Kohli"],
     "id": "6"
   }

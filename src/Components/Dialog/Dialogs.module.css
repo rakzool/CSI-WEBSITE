@@ -57,3 +57,12 @@
   margin-top: 2rem;
   justify-content: center;
 }
+
+.syllabusList {
+  margin: 1rem 0rem;
+  display: flex;
+}
+
+.major {
+  margin: 0rem 0rem 0rem 1rem;
+}
