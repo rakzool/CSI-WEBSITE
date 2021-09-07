@@ -17,7 +17,15 @@ function Home() {
     setOpen(!open);
   };
 
-  const dialogOpen = (name, description, alt, image, syllabus, sigHead) => {
+  const dialogOpen = (
+    name,
+    description,
+    alt,
+    image,
+    syllabus,
+    sigHead,
+    HeadImage
+  ) => {
     handleClickOpen();
 
     setlist({
@@ -25,6 +33,7 @@ function Home() {
       description: description,
       alt: alt,
       image: image,
+      HeadImage: HeadImage,
     });
     setSyl(syllabus);
     setHead(sigHead);
@@ -57,7 +66,15 @@ function Home() {
         <div className="sigs">
           <div className="temp">
             {Data.map((itms, index) => {
-              const { name, description, alt, image, syllabus, sigHead } = itms;
+              const {
+                name,
+                description,
+                alt,
+                image,
+                syllabus,
+                sigHead,
+                HeadImage,
+              } = itms;
 
               return (
                 <div key={index}>
@@ -70,7 +87,8 @@ function Home() {
                         alt,
                         image,
                         syllabus,
-                        sigHead
+                        sigHead,
+                        HeadImage
                       )
                     }
                   >
@@ -99,6 +117,7 @@ function Home() {
             desp={list.description}
             syllabus={syl}
             Heads={head}
+            HeadImage={list.HeadImage}
           />
         </div>
       </div>

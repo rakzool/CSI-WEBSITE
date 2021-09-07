@@ -71,6 +71,7 @@ export default function Dialogs({
   alt,
   handleClickOpen,
   Heads,
+  HeadImage,
 }) {
   return (
     <div>
@@ -130,16 +131,21 @@ export default function Dialogs({
                   return (
                     <div className={Classes.headAvatar}>
                       <img
-                        src="https://p.kindpng.com/picc/s/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
+                        src={HeadImage[index]}
                         alt="avatar"
                         height="100rem"
                         width="100rem"
                         style={{
+                          border: "3px solid black",
                           borderRadius: "50%",
+                          height: "100px",
+                          width: "100px",
+                          objectFit: "cover",
                           flex: "1",
                           marginTop: "1rem",
                         }}
                       />
+
                       <li key={index} className={Classes.dos}>
                         {item}
                       </li>
