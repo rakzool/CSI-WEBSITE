@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
+import Team from "./Components/Team/Team";
 
 class App extends React.Component {
   state = {};
@@ -26,6 +27,7 @@ class App extends React.Component {
                 <div className="pageHandle">
                   <Route path="/about" component={About} />
                   <Route path="/contact" component={Contact} />
+                  <Route path="/team" component={Team} />
                 </div>
               </Switch>
             </div>
