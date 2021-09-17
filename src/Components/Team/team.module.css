@@ -10,3 +10,28 @@
   border: 1px solid black;
   width: 100%;
 }
+
+.flexContainer {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+.flexContainer > * {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.flexContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 798px) {
+  .flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
