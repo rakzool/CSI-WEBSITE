@@ -7,7 +7,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
-import Team from "./Components/Team/Team";
+import Team from "./Components/Team/Team.js";
 import Alumnaies from "./Components/alumnaies/alumnaies.jsx";
 import Events from "./Components/Event/event.jsx";
 
