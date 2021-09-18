@@ -19,3 +19,30 @@
 .pageHandle {
   margin-top: 64px;
 }
+
+.UnderConstruction {
+  margin-top: 10rem;
+}
+
+.UnderConstruction img {
+  width: 65%;
+}
+.UnderConstruction h1 {
+  font-family: "Open Sans";
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 350;
+  margin-bottom: 2rem;
+}
+
+.UnderConstruction h1 span {
+  border-bottom: 3px solid tomato;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 798px) {
+  .UnderConstruction img {
+    width: 100%;
+  }
+}

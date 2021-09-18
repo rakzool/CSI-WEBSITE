@@ -58,13 +58,13 @@ i .drawer-nav-container {
 }
 
 .link-container {
-  margin: 0;
+  margin-left: -10px;
   padding: 0;
 }
 
 .route-link {
-  padding: 10px;
-  width: 101%;
+  padding: 10px 0px 10px 0px;
+  width: 102%;
   text-align: center;
 }
 
@@ -80,10 +80,10 @@ i .drawer-nav-container {
   margin-left: 5rem;
 }
 
-.texts {
-  margin-left: 1.2rem;
-}
-
 .menu-text {
-  font-family: "Fira code";
+  font-family: "Fira code", sans-serif;
+}
+.texts {
+  font-weight: 300;
+  padding: 5px;
 }

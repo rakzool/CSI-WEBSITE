@@ -23,37 +23,31 @@ export default function Drawer() {
       title: "Home",
       Path: "/",
       cName: "route-link",
-      icon: "fa fa-home",
     },
     {
       title: "Contact",
       Path: "/contact",
       cName: "route-link",
-      icon: "fa fa-phone",
     },
     {
       title: "About",
       Path: "/about",
       cName: "route-link",
-      icon: "fa fa-info-circle",
     },
     {
       title: "Our Team",
       Path: "/team",
       cName: "route-link",
-      icon: "fa fa-users",
     },
     {
-      title: "Our Events",
-      Path: "/team",
+      title: "Events",
+      Path: "/events",
       cName: "route-link",
-      icon: "fa fa-users",
     },
     {
       title: "Alumnies",
-      Path: "/team",
+      Path: "/Alumnies",
       cName: "route-link",
-      icon: "fa fa-users",
     },
   ];
 
@@ -100,9 +94,6 @@ export default function Drawer() {
               <Link to={items.Path} className="stylrem" key={index}>
                 <li className={items.cName}>
                   <div className="link-style">
-                    <div className="icons">
-                      <i className={items.icon}>&nbsp;</i>
-                    </div>
                     <div className="texts">
                       <span>{items.title}</span>
                     </div>

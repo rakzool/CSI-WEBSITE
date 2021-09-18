@@ -8,6 +8,8 @@ import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import Team from "./Components/Team/Team";
+import Alumnaies from "./Components/alumnaies/alumnaies.jsx";
+import Events from "./Components/Event/event.jsx";
 
 class App extends React.Component {
   state = {};
@@ -28,6 +30,8 @@ class App extends React.Component {
                   <Route path="/about" component={About} />
                   <Route path="/contact" component={Contact} />
                   <Route path="/team" component={Team} />
+                  <Route path="/events" component={Events} />
+                  <Route path="/Alumnies" component={Alumnaies} />
                 </div>
               </Switch>
             </div>

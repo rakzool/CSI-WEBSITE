@@ -2,8 +2,14 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Component</h1>
+    <div className="UnderConstruction">
+      <h1>
+        <span> &nbsp;Page In Progress&nbsp; </span>
+      </h1>
+      <img
+        src="https://image.freepik.com/free-vector/rising-concept-illustration_114360-930.jpg"
+        alt="under-construction"
+      />
     </div>
   );
 }
