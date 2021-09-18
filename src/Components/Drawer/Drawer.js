@@ -43,6 +43,18 @@ export default function Drawer() {
       cName: "route-link",
       icon: "fa fa-users",
     },
+    {
+      title: "Our Events",
+      Path: "/team",
+      cName: "route-link",
+      icon: "fa fa-users",
+    },
+    {
+      title: "Alumnies",
+      Path: "/team",
+      cName: "route-link",
+      icon: "fa fa-users",
+    },
   ];
 
   const classes = useStyles();
